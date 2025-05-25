@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nút Quay lại -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Quay lại"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách bàn đã đặt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <!-- Danh sách các booking -->
+    <ListView
+        android:id="@+id/lvBookings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    android:paddingBottom="16dp"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp" />
+
+    <!-- Nút thanh toán -->
+    <Button
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán ngay"
+        android:background="?attr/selectableItemBackground"
+        android:padding="12dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nút xuất hóa đơn -->
+    <Button
+        android:id="@+id/btnInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xuất hóa đơn"
+        android:background="?attr/selectableItemBackground"
+        android:padding="12dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

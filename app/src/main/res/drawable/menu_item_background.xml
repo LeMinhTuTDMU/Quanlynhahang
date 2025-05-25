@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorAccent" android:state_pressed="true"/> <!-- Khi nhấn -->
+    <item android:drawable="@android:color/transparent" /> <!-- Màu nền mặc định -->
+</selector>

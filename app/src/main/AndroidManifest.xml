@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectSesan">
+
+        <!-- Chỉ định LoginActivity là màn hình khởi động duy nhất -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity không cần intent-filter -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Các Activity khác -->
+
+        <activity android:name=".AddDishActivity" android:exported="false"/>
+        <activity android:name=".BookingListActivity" />
+        <activity android:name=".InvoiceActivity" />
+        <activity android:name=".AddStaffActivity"/>
+        <activity android:name=".StaffListActivity"/>
+
+    </application>
+</manifest>
